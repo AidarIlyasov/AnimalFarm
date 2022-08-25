@@ -1,1 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: rgb(128,222,234);
+    background: linear-gradient(#dff7fa, #00d4ff);
+}
+.d-flex {
+    display: flex;
+}
+.d-none {
+    display: none;
+}
+.transparent-bg {
+    background-color: transparent !important;
+}
 
