@@ -19,29 +19,29 @@ class AnimalSeeder extends Seeder
 
         $simon = [
             'name' => 'Simon',
-            'age'  => random_int(1, $animalKinds['cat']->max_age),
-            'size' => random_int(1, $animalKinds['cat']->max_size),
+            'age'  => 1,
+            'size' => 1,
             'kind_id' => 1
         ];
 
         $lucy = [
             'name' => 'Lucy',
-            'age'  => random_int(1, $animalKinds['dog']->max_age),
-            'size' => random_int(1, $animalKinds['dog']->max_size),
+            'age'  => 1,
+            'size' => 1,
             'kind_id' => 2
         ];
 
         $stephan = [
             'name' => 'Stephan',
-            'age'  => random_int(1, $animalKinds['pigeon']->max_age),
-            'size' => random_int(1, $animalKinds['pigeon']->max_size),
+            'age'  => 1,
+            'size' => 1,
             'kind_id' => 3
         ];
 
         $basil = [
             'name' => 'Basil',
-            'age'  => random_int(1, $animalKinds['mouse']->max_age),
-            'size' => random_int(1, $animalKinds['mouse']->max_size),
+            'age'  => 1,
+            'size' => 1,
             'kind_id' => 4
         ];
 

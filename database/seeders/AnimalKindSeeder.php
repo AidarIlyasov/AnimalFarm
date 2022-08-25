@@ -16,7 +16,7 @@ class AnimalKindSeeder extends Seeder
     {
         $cat = [
             'kind' => 'cat',
-            'max_size' => 24,
+            'max_size' => 34,
             'max_age' => 15,
             'growth_factor' => 1.3
         ];
@@ -30,16 +30,16 @@ class AnimalKindSeeder extends Seeder
 
         $pigeon = [
             'kind' => 'pigeon',
-            'max_size' => 8,
+            'max_size' => 16,
             'max_age' => 6,
             'growth_factor' => 2.0
         ];
 
         $mouse = [
             'kind' => 'mouse',
-            'max_size' => 5,
+            'max_size' => 7,
             'max_age' => 2,
-            'growth_factor' => 4.0
+            'growth_factor' => 3.2
         ];
 
         AnimalKind::insert([$cat, $dog, $pigeon, $mouse]);
