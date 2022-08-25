@@ -1,16 +1,19 @@
 <?php
 
 namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Animal extends Model
 {
-    use HasFactory;
+    public $timestamps = false;
 
-    public function animalKind()
+    protected $fillable = [
+        'name',
+        'kind_id'
+    ];
+
+    public function animalkind()
     {
-        return $this->hasOne(AnimalKind::class);
+        return $this->belongsTo(AnimalKind::class, 'kind_id', 'id');
     }
 }

@@ -15,7 +15,7 @@ class CreateAnimalKindsTable extends Migration
     {
         Schema::create('animal_kinds', function (Blueprint $table) {
             $table->id();
-            $table->string('kind');
+            $table->string('kind')->unique();
             $table->integer('max_size');
             $table->integer('max_age');
             $table->float('growth_factor');
